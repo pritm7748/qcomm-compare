@@ -38,6 +38,9 @@ const allowedOrigins = [
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 
+// Root route
+app.get('/', (req, res) => res.json({ name: 'QComm API', status: 'running', platforms: Object.keys(platforms).length }));
+
 // Health check endpoint for deployment platforms
 app.get('/health', (req, res) => res.json({ status: 'ok', platforms: Object.keys(platforms).length }));
 
