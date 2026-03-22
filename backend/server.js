@@ -27,7 +27,7 @@ const server = createServer(app);
 const wss = new WebSocketServer({ server });
 
 const PORT = process.env.PORT || 3001;
-const FRONTEND_URL = process.env.FRONTEND_URL || '';
+const FRONTEND_URL = (process.env.FRONTEND_URL || '').replace(/\/+$/, '');
 
 // Middleware
 const allowedOrigins = [
