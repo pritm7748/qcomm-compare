@@ -1,0 +1,23 @@
+{
+  "name": "qcomm-backend",
+  "version": "1.0.0",
+  "description": "QComm - Quick Commerce Price Comparison Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "ghost-cursor": "^1.4.2",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.58.2",
+    "puppeteer": "^24.37.5",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "ws": "^8.16.0"
+  }
+}
